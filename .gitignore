@@ -1,0 +1,22 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Test reports
+allure-results/
+allure-report/
+junit-results/
+reports/
+
+# Logs & temp files
+*.log
+*.tmp
+*.swp
+*.pid
+
+# Environment & configuration files
+.env
+*.local
+
+# VS Code settings
+.vscode/

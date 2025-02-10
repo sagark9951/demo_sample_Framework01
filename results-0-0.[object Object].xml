@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" errors="0" skipped="1">
+  <testsuite name="Login Test" timestamp="2025-02-10T17:30:02" time="5.564" tests="2" failures="1" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Login Test"/>
+      <property name="capabilities" value="chrome.133_0_6943_53.windows"/>
+      <property name="file" value="file:///C:/Framework_Demo1/test/specs/login.test.js"/>
+    </properties>
+    <testcase classname="chrome.133_0_6943_53.windows.Login_Test" name="should login with valid credentials" time="5.562">
+      <failure message="element (&quot;#user-name&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0682b3a3828e9080c50d5901afd90073/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0682b3a3828e9080c50d5901afd90073/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("#user-name") still not displayed after 5000ms
+    at <anonymous> (C:\Framework_Demo1\node_modules\webdriverio\build\node.js:5594:15)
+    at async Element.wrapCommandFn (C:\Framework_Demo1\node_modules\@wdio\utils\build\index.js:893:23)
+    at async Element.elementErrorHandlerCallbackFn (C:\Framework_Demo1\node_modules\webdriverio\build\node.js:8196:24)
+    at async Element.wrapCommandFn (C:\Framework_Demo1\node_modules\@wdio\utils\build\index.js:893:23)
+    at async Element.wrapCommandFn (C:\Framework_Demo1\node_modules\@wdio\utils\build\index.js:893:23)
+    at async Element.elementErrorHandlerCallbackFn (C:\Framework_Demo1\node_modules\webdriverio\build\node.js:8196:24)
+    at async Element.wrapCommandFn (C:\Framework_Demo1\node_modules\@wdio\utils\build\index.js:893:23)
+    at async LoginPage.login (file:///C:/Framework_Demo1/test/pageobjects/loginPrivate.screen.js:19:9)
+    at async Context.<anonymous> (file:///C:/Framework_Demo1/test/specs/login.test.js:10:9)
+    at async Context.executeAsync (C:\Framework_Demo1\node_modules\@wdio\utils\build\index.js:1016:20)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.133_0_6943_53.windows.Login_Test" name="should show error for invalid login" time="0">
+      <skipped/>
+      <system-out><![CDATA[
+COMMAND: DELETE /session/0682b3a3828e9080c50d5901afd90073 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

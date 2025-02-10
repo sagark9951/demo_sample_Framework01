@@ -1,0 +1,14 @@
+{
+    "qa": {
+        "userName": "standard_user",
+        "password": "secret_sauce"
+    },
+    "dev": {
+        "userName": "standard_user",
+        "password": "secret_sauce"
+    },
+    "prod": {
+        "userName": "standard_user",
+        "password": "secret_sauce"
+    }
+}
