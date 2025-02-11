@@ -1,4 +1,14 @@
 
+function outer(){
+    let aa ='have some fruits'
+
+    function inner(){
+        return console.log(aa);
+    }
+    inner();
+}
+
+outer()
 
 function createCounter(){
     let count = 0;
@@ -7,8 +17,6 @@ function createCounter(){
         increment : function (){
             count = count+1
             return count
-            // console.log(count);
-            
         },
         decrement : function(){
             count = count - 1
@@ -18,15 +26,10 @@ function createCounter(){
             return count;
         }
     }
-
 }
 
 let counter = createCounter()
-// console.log(counter); /*{
-//     increment: [Function: increment],
-//     decrement: [Function: decrement],
-//     getCount: [Function: getCount]
-//   }*/
+
 
 console.log("counter.increment() : ",counter.increment()); //1
 console.log("counter.increment() : ",counter.increment()); //2
