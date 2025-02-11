@@ -1,4 +1,14 @@
 
+function outer(){
+    let aa ='have some fruits'
+
+    function inner(){
+        return console.log(aa);
+    }
+    inner();
+}
+
+outer()
 
 function createCounter(){
     let count = 0;
@@ -16,7 +26,6 @@ function createCounter(){
             return count;
         }
     }
-
 }
 
 let counter = createCounter()
