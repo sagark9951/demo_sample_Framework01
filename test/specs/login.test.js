@@ -12,7 +12,7 @@ describe('Login Test', () => {
         expect(await browser.getUrl()).to.include('inventory.html')
     });
 
-    it.skip('should show error for invalid login', async () => {
+    it('should show error for invalid login', async () => {
         await loginPage.login('invalid_user', 'wrong_password');
         let errorMsg =await loginPage.errorMssg()
         expect(errorMsg).to.be.true;

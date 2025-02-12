@@ -1,0 +1,9 @@
+#When you edit a file on Windows and then try to
+# use it in a system that expects LF endings (like Linux), 
+#it can cause confusion. The warning is Git's way of saying,
+# "Hey, I’m going to change the line endings for you next time you work with this file."
+
+#If you want more control, you can create a file called .gitattributes in your project folder. 
+#This file tells Git how to handle line endings for all files in your project.
+
+* text=auto
