@@ -14,5 +14,8 @@
   "dependencies": {
     "allure-commandline": "^2.32.2",
     "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "test1":"npx wdio  run  wdio.web.conf.js --spec test/specs/loginAndAddProduct.spec.js"
   }
 }

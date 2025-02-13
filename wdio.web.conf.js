@@ -183,6 +183,9 @@ export const config = {
         const reportError = new Error('Could not generate Allure report')
         const now = new Date();
         const timestamp = `${now.getDate()}-${(now.getMonth() + 1)}-${now.getFullYear()}_${now.getHours()}-${now.getMinutes()}`;
+        if (!fs.existsSync('Web_Execution_Report')) {
+            fs.mkdirSync('Web_Execution_Report');
+        }
         const reportDir = path.join('Web_Execution_Report', `Report_${timestamp}`);
         const reportFile = `Web_Report_${timestamp}.html`
 
